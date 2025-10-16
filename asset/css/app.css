@@ -6,13 +6,13 @@ body {
 	font-family: Roboto;
 }
 
-h3 {
+h3, .fa {
 	text-align: center;
-	color: #CFD60A;
+	color: #00e1ff;
 }
 
 h2 {
-	color: rgb(123,230,123);
+	color: #67edff;
 }
 
 .fa-plus {
@@ -29,16 +29,23 @@ ul {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	border: 1px solid #03a4a4 /*added border to todo list*/
+}
+
+/*added .text to fix text being too far to the left*/
+.text {
+	padding-left: 10px; 
 }
 
 li {
 	height: 40px;
 	line-height: 40px;
-	color: rgb(230,230,12);
+	color: #35ffff;
+	background: rgba(13, 0, 35, 0.5); /*added for alternating bg colors on todo-list*/
 }
 
 li:nth-child(2n) {
-	background: rgba(123,123,123,0.5);
+	background: rgba(19, 0, 67, 0.5);
 }
 
 .left {
@@ -85,8 +92,10 @@ li:hover span{
 }
 
 input:focus {
-	/*border: 1px solid black;*/
-	/*Coz it's not really required though.*/
+	/*border around input box when selected,
+	was disabled by default but i kinda liked it*/
+	border: 3px solid #2adafd;
+	border-bottom-color: 3px solid #000000;
 }
 
 .completed {
