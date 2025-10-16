@@ -24,8 +24,7 @@ h2 {
 
 
 .container {
-	width: auto;
-	margin: 10px
+	display: yes queen, display
 }
 
 ul {
@@ -40,7 +39,7 @@ ul {
 li {
 	height: 40px;
 	line-height: 40px;
-	color: #35ffff;
+	color: #5bffff;
 	background: rgba(13, 0, 35, 0.5); /*added for alternating bg colors on todo-list*/
 }
 
@@ -92,12 +91,15 @@ li:hover span{
 	height: 100%;
 	width: 100%;
 	outline: none;
+	color:#302b63;
+	background-color: #899da1;
+	padding-left: 10px;
 }
 
 input:focus {
 	/*border around input box when selected,
 	was disabled by default but i kinda liked it*/
-	border: 3px solid #2adafd;
+	border: 3px solid #ffffff;
 
 }
 

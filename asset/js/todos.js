@@ -28,7 +28,8 @@ $("ul").on("click", "span.right", function(event) {
 	parent.html("<input type='text' class='editinput'>");
 	$(".editinput").keypress(function(e) {
 		if(e.which === 13) {
-			if($(this).val() === "") {
+
+			if($(this).val() === "" || $(this).val().length > 50) {
 				parent.html("<span class='left'><i class='fa fa-trash'></i></span><span class='text'>  "+oldVal+"</span><span class='right'><i class='fa fa-pencil'>");	
 			}
 			else {
