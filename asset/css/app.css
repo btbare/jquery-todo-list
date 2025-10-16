@@ -6,35 +6,35 @@ body {
 	font-family: Roboto;
 }
 
-h3, .fa {
-	text-align: center;
-	color: #00e1ff;
+h4, .fa {
+	text-align: left;
+	color: #46e9ff; 
 }
 
 h2 {
-	color: #67edff;
+	text-align: center;
+	margin-top: 100px ;
+	color: #02fff7;
 }
 
 .fa-plus {
 	float: right;
+	margin-right: 20px;
 }
 
+
 .container {
-	width: 400px;
-	margin: 100px auto;
+	width: auto;
+	margin: 10px
 }
 
 ul {
 	list-style: none;
-	margin: 0;
+	margin: 20px;
 	padding: 0;
 	position: relative;
-	border: 1px solid #03a4a4 /*added border to todo list*/
-}
-
-/*added .text to fix text being too far to the left*/
-.text {
-	padding-left: 10px; 
+	border: 1px solid #03a4a4; /*added border to todo list*/
+	border-top: 2px solid #03a4a4;
 }
 
 li {
@@ -57,6 +57,7 @@ li:nth-child(2n) {
 	width: 0; 
 	opacity: 0;
 	transition: 0.2s linear;
+	padding-left: 10px;
 }
 
 .right {
@@ -75,6 +76,8 @@ li:nth-child(2n) {
 li:hover span{
 	width: 35px;
 	opacity: 1;
+	padding-left: 10px;	/*added to fix the text being too close to the left when the icons comes out on mouse hover*/
+	padding-right: 10px;
 }
 
 .todoinput {
@@ -95,10 +98,10 @@ input:focus {
 	/*border around input box when selected,
 	was disabled by default but i kinda liked it*/
 	border: 3px solid #2adafd;
-	border-bottom-color: 3px solid #000000;
+
 }
 
 .completed {
 	text-decoration: line-through;
-	color: gray;
+	color: rgb(0, 254, 55); /* green seems more fitting for the "completed" vibe (previously grey) */
 }
