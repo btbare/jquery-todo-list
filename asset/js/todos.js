@@ -2,7 +2,7 @@ $(".todoinput").keypress(function(event) {
 	if(event.which === 13) {
 		if($(this).val()==="") return;
 		if($(this).val().length>50) return; //return if input exceeds 50chars
-		$("ul").prepend("<li><span class='left'><i class='fa fa-trash'></i></span>  "+$(this).val()+"<span class='right'><i class='fa fa-pencil'></li>");
+		$("ul").prepend("<li><span class='left'><i class='fa fa-minus'></i></span><span class='text'>"+$(this).val()+"</span><span class='right'><i class='fa fa-wrench'></i></li>"); 
 		$(this).val("");
 	}
 });
@@ -30,11 +30,11 @@ $("ul").on("click", "span.right", function(event) {
 		if(e.which === 13) {
 
 			if($(this).val() === "" || $(this).val().length > 50) {
-				parent.html("<span class='left'><i class='fa fa-trash'></i></span><span class='text'>  "+oldVal+"</span><span class='right'><i class='fa fa-pencil'>");	
+				parent.html("<span class='left'><i class='fa fa-minus'></i></span><span class='text'>  "+oldVal+"</span><span class='right'><i class='fa fa-pencil'>");	
 			}
 			else {
 				var newVal = $(this).val();
-				parent.html("<span class='left'><i class='fa fa-trash'></i></span><span class='text'>  "+newVal+"</span><span class='right'><i class='fa fa-pencil'>");
+				parent.html("<span class='left'><i class='fa fa-minus'></i></span><span class='text'>  "+newVal+"</span><span class='right'><i class='fa fa-pencil'>");
 			}
 		}
 		e.stopPropagation();

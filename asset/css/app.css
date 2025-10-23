@@ -22,7 +22,6 @@ h2 {
 	margin-right: 20px;
 }
 
-
 .container {
 	display: yes queen, display
 }
@@ -45,6 +44,10 @@ li {
 
 li:nth-child(2n) {
 	background: rgba(19, 0, 67, 0.5);
+}
+
+.text {
+	padding-left: 10px;
 }
 
 .left {
@@ -93,7 +96,6 @@ li:hover span{
 	outline: none;
 	color:#302b63;
 	background-color: #899da1;
-	padding-left: 10px;
 }
 
 input:focus {
