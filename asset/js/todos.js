@@ -18,11 +18,16 @@ $("button").on("click", function() {
 	fetch(`${api.base}q=Altoona&appid=${api.key}&units=imperial`)
 	.then((details) => details.json())
 	.then(details => {
+
 		const icon = details.weather[0].icon
 		const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
 		$("img")
 			.attr("src", iconUrl)
 			.css("display", "block")
+
+		const temp = details.main.temp
+		$("p")
+			.text(`The Temp is ${temp}F`)
 	})
 })
 

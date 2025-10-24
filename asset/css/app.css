@@ -17,6 +17,11 @@ h2 {
 	color: #02fff7;
 }
 
+p {
+	text-align: center;
+	color: #02fff7;
+}
+
 /*gives the weather api icon a funky intro*/
 @keyframes bounce {
   0%   { transform: translate(-400px, 0)}
@@ -47,6 +52,7 @@ h2 {
   height: 150px;
   animation: bounce 1s ease;
 }
+
 /*end funk*/
 
 .fa-plus {
