@@ -1,0 +1,26 @@
+{
+  "name": "jquery-todo-list",
+  "version": "1.0.0",
+  "description": "A side project that demonstrates a To-Do List built using jQuery.\r View the demo on [codepen](https://codepen.io/sinharaksh1t/full/gozabO/)!\r ## Usage\r * Click on the items to mark them as done.\r * Click on the delete (trash-can) icon to delete the to-do permanently.\r * Click on the pencil (edit) icon to edit the already existing to-do.\r * Use the plus sign to toggle to-do text input area.",
+  "main": "index.js",
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btbare/jquery-todo-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btbare/jquery-todo-list/issues"
+  },
+  "homepage": "https://github.com/btbare/jquery-todo-list#readme",
+  "devDependencies": {
+    "vite": "^7.1.12"
+  }
+}
