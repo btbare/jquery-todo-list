@@ -2,7 +2,7 @@ body {
 	background: #0f0c29;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(left, #24243e, #302b63, #0f0c29);
 	background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
-	background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: Roboto;
 }
 
@@ -17,22 +17,65 @@ h2 {
 	color: #02fff7;
 }
 
+/*gives the weather api icon a funky intro*/
+@keyframes bounce {
+  0%   { transform: translate(-400px, 0)}
+  25%  { transform: translate(-250px, 50px); }
+  50%  { transform: translate(-100px, 0); }
+  75%  { transform: translate(-50px, 25px); }
+  100%  { transform: translate(-0px, 0); }
+}
+
+/*remove keyframes defined above, then remove commment around this to increase funk
+@keyframes bounce {
+  0%   { transform: translate(-400px, -80px)}
+  12.5%   { transform: translate(250px, -70px)}
+  25%  { transform: translate(-125px, -60px); }
+  37.5%  { transform: translate(75px, -50px); }
+  50%  { transform: translate(-37.5px, -40px); }
+  62.5%  { transform: translate(18.75px, -30px); }
+  75%  { transform: translate(-9.37px, -20px); }
+  87.5%  { transform: translate(4.68px, -10px); }
+  100%  { transform: translate(-0px, 0); }
+}
+*/
+
+#image {
+  display: none;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  animation: bounce 1s ease;
+}
+/*end funk*/
+
 .fa-plus {
 	float: right;
 	margin-right: 20px;
 }
 
-.container {
-	display: yes queen, display
+.fa-cloud {
+	font-size: 50px;
+}
+
+button {
+	display: block;
+	background: none;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+	width: 100px;
 }
 
 ul {
 	list-style: none;
-	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 	position: relative;
 	border: 1px solid #03a4a4; /*added border to todo list*/
-	border-top: 2px solid #03a4a4;
+	border-top: 1px solid #03a4a4;
 }
 
 li {
@@ -96,6 +139,7 @@ li:hover span{
 	outline: none;
 	color:#302b63;
 	background-color: #899da1;
+	padding-left: 20px;
 }
 
 input:focus {
